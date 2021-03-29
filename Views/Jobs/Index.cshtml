@@ -1,0 +1,125 @@
+﻿@model IEnumerable<ERecruitmentMvc.Models.Job>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ListingDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teaser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BulletPoints001)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BulletPoints002)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BulletPoints003)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AdvertiserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LocationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AreaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassificationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SubClassificationId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SuburbWhereValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RoleId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BrandingLogoUrl)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ListingDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teaser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BulletPoints001)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BulletPoints002)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BulletPoints003)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AdvertiserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AreaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassificationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SubClassificationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SuburbWhereValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RoleId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BrandingLogoUrl)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
