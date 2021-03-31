@@ -7,18 +7,27 @@
 
 <script type="text/javascript">
     function cardFilter() {
-        var searchTerm = document.getElementById("searchTerm");
-        var cards = document.getElementsByClassName("card");
-        Array.prototype.forEach.call(cards, function (card) {
-            console.log(card);
-            var title = card.getElementById("Title").innerText().toLowerCase();
-            alert(title);
-            if (!title.includes(searchTerm)) {
-                card.addClass("invisible");
-            }
-        });
-
+        //var searchTerm = document.getElementById("searchTerm");
+        //var cards = document.getElementsByClassName("card");
+        //Array.prototype.forEach.call(cards, function (card) {
+        //    console.log(card);
+        //    var title = card.getElementById("Title").innerText().toLowerCase();
+        //    alert(title);
+        //    if (!title.includes(searchTerm)) {
+        //        card.addClass("invisible");
+        //    }
+        //});
+        jQuery.expr[':'].Contains = function (a, i, m) {
+            return jQuery(a).text().toUpperCase()
+                .indexOf(m[3].toUpperCase()) >= 0;
+        };
+        $('.container').find(".card-title:not(:contains(" + filter + "))").parents('.row').css('display', 'block');
+        $('.card').show();
+        var filter = $('#searchTerm').val(); // get the value of the input, which we filter on
+        $('.container').find(".card-title:not(:contains(" + filter + "))").parents('.row').css('display', 'none');
     }
+
+    
 </script>
  }
     <div class="row mt-2">
@@ -35,7 +44,7 @@
             <div class="row mt-2">
                 <div class="col-12">
                     <div class="card border-dark text-dark">
-                        <div class="card-body">
+                        <div class="card-body ">
                             <div class="content">
                                 <h4 id="Title" class="card-title">@job.Title</h4>
                                 <h6 class="card-subtitle mb-2">@job.Teaser</h6>
