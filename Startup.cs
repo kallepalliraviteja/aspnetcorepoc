@@ -45,7 +45,7 @@ namespace ERecruitmentMvc
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Job}/{action=Index}/{id?}");
+                    pattern: "{controller=Jobs}/{action=Index}/{id?}");
             });
         }
     }

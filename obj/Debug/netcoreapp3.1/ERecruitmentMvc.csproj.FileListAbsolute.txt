@@ -170,3 +170,10 @@ D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\staticw
 D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\ERecruitmentMvc.dll
 D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\ERecruitmentMvc.pdb
 D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\ERecruitmentMvc.genruntimeconfig.cache
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\ERecruitmentMvc.csprojAssemblyReference.cache
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Jobs\Create.cshtml.g.cs
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Jobs\Delete.cshtml.g.cs
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Jobs\Details.cshtml.g.cs
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Jobs\Edit.cshtml.g.cs
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Jobs\Index.cshtml.g.cs
+D:\Kireeti\recruitmentagency\POC\ERecruitmentMvc\bin\Debug\netcoreapp3.1\libman.json
